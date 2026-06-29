@@ -1,4 +1,5 @@
 <script lang="ts">
+	import CoreServices from '$lib/components/sections/CoreServices.svelte';
 	import Button from '$lib/components/ui/Button.svelte';
 	import Container from '$lib/components/ui/Container.svelte';
 </script>
@@ -11,9 +12,9 @@
 	/>
 </svelte:head>
 
-<main class="min-h-screen py-24">
-	<Container>
-		<section>
+<main>
+	<section class="min-h-screen py-24">
+		<Container>
 			<p
 				class="mb-6 inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-slate-300"
 			>
@@ -33,6 +34,8 @@
 				<Button href="/contact">Request a software review</Button>
 				<Button href="/services" variant="secondary">Explore services</Button>
 			</div>
-		</section>
-	</Container>
+		</Container>
+	</section>
+
+	<CoreServices />
 </main>
