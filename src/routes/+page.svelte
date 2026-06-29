@@ -1,6 +1,7 @@
 <script lang="ts">
 	import CoreServices from '$lib/components/sections/CoreServices.svelte';
 	import ProblemSection from '$lib/components/sections/ProblemSection.svelte';
+	import ProcessSection from '$lib/components/sections/ProcessSection.svelte';
 	import Button from '$lib/components/ui/Button.svelte';
 	import Container from '$lib/components/ui/Container.svelte';
 </script>
@@ -40,4 +41,5 @@
 
 	<CoreServices />
 	<ProblemSection/>
+	<ProcessSection/>
 </main>
