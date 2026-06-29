@@ -5,6 +5,7 @@
 	import WhyOpervanta from '$lib/components/sections/WhyOpervanta.svelte';
 	import Button from '$lib/components/ui/Button.svelte';
 	import Container from '$lib/components/ui/Container.svelte';
+	import FinalCTA from '$lib/components/sections/FinalCTA.svelte';
 </script>
 
 <svelte:head>
@@ -44,4 +45,5 @@
 	<ProblemSection />
 	<ProcessSection />
 	<WhyOpervanta />
+	<FinalCTA />
 </main>
