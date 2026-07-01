@@ -1,10 +1,9 @@
 <script lang="ts">
+	import Hero from '$lib/components/sections/Hero.svelte';
 	import CoreServices from '$lib/components/sections/CoreServices.svelte';
 	import ProblemSection from '$lib/components/sections/ProblemSection.svelte';
 	import ProcessSection from '$lib/components/sections/ProcessSection.svelte';
 	import WhyOpervanta from '$lib/components/sections/WhyOpervanta.svelte';
-	import Button from '$lib/components/ui/Button.svelte';
-	import Container from '$lib/components/ui/Container.svelte';
 	import FinalCTA from '$lib/components/sections/FinalCTA.svelte';
 </script>
 
@@ -17,30 +16,7 @@
 </svelte:head>
 
 <main>
-	<section class="min-h-screen py-24">
-		<Container>
-			<p
-				class="mb-6 inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-slate-300"
-			>
-				Software QA • Software improvement • Workflow automation
-			</p>
-
-			<h1 class="max-w-4xl text-5xl font-semibold tracking-tight text-white sm:text-6xl">
-				Test, improve, and automate the digital systems your business depends on.
-			</h1>
-
-			<p class="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-				Opervanta helps businesses find software issues, improve usability, reduce technical
-				friction, and create more reliable digital workflows.
-			</p>
-
-			<div class="mt-10 flex flex-col gap-4 sm:flex-row">
-				<Button href="/contact">Request a software review</Button>
-				<Button href="/services" variant="secondary">Explore services</Button>
-			</div>
-		</Container>
-	</section>
-
+	<Hero />
 	<CoreServices />
 	<ProblemSection />
 	<ProcessSection />

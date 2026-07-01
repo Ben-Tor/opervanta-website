@@ -22,6 +22,6 @@ export const advantages: Advantage[] = [
 	{
 		title: 'Built for future capability',
 		description:
-			'Opervanta starts with software quality and automation, with a long-term direction toward AI-enabled business systems.'
+			'Opervanta starts with practical software quality, workflow clarity, and automation opportunities that support better future technology decisions.'
 	}
 ];
