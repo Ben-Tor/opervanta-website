@@ -8,13 +8,15 @@
 		<div class="max-w-2xl">
 			<p class="mb-4 text-lg font-semibold text-cyan-600">Process</p>
 
-			<h2 class="max-w-3xl text-3xl font-semibold leading-tight tracking-tight text-slate-950 sm:text-4xl xl:text-[42px]">
+			<h2
+				class="max-w-3xl text-3xl font-semibold leading-tight tracking-tight text-slate-950 sm:text-4xl xl:text-[42px]"
+			>
 				A clear process for finding issues and improving execution.
 			</h2>
 
 			<p class="mt-5 text-lg leading-8 text-slate-700">
-				Opervanta uses a structured approach to understand the system, test important flows,
-				report issues clearly, and support practical improvement.
+				Opervanta uses a structured approach to understand the system, test important flows, report
+				issues clearly, and support practical improvement.
 			</p>
 		</div>
 
