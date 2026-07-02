@@ -11,7 +11,7 @@
 		{
 			title: 'Clear documentation',
 			description:
-				'Findings should be written clearly so business owners, operators, and technical teams can understand what is wrong and what should happen next.'
+				'Findings are written clearly so business owners, operators, and technical teams can understand what is wrong, why it matters, and what should happen next.'
 		},
 		{
 			title: 'Workflow awareness',
@@ -30,7 +30,7 @@
 	<title>About | Opervanta</title>
 	<meta
 		name="description"
-		content="Learn about Opervanta, a Canadian technology company focused on software quality, software improvement, and workflow automation."
+		content="Learn about Opervanta, a Canadian technology company focused on software QA, usability review, workflow improvement, and automation planning."
 	/>
 </svelte:head>
 
@@ -40,7 +40,7 @@
 			<p class="mb-4 text-lg font-semibold text-cyan-600">About Opervanta</p>
 
 			<h1 class="max-w-3xl text-3xl font-semibold leading-tight tracking-tight text-slate-950 sm:text-4xl xl:text-[42px]">
-				A technology company built around better software execution.
+				A technology company focused on better software execution.
 			</h1>
 
 			<p class="mt-6 max-w-3xl text-lg leading-8 text-slate-700">
@@ -74,7 +74,7 @@
 					</p>
 
 					<p>
-						The work sits between software quality, usability review, workflow analysis, and
+						The work sits between software QA, usability review, workflow analysis, and
 						automation planning.
 					</p>
 				</div>
@@ -93,7 +93,7 @@
 			</div>
 
 			<div class="mt-12 grid gap-5 sm:grid-cols-2">
-				{#each principles as principle}
+				{#each principles as principle (principle.title)}
 					<article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
 						<h3 class="text-lg font-semibold text-slate-950">{principle.title}</h3>
 
@@ -118,8 +118,8 @@
 						</h2>
 
 						<p class="mt-4 max-w-2xl text-base leading-7 text-slate-700">
-							See how Opervanta approaches software QA, software improvement, and workflow
-							automation.
+							See how Opervanta approaches software QA, usability review, workflow
+							improvement, and automation planning.
 						</p>
 					</div>
 

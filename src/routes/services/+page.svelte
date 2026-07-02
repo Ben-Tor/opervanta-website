@@ -8,7 +8,7 @@
 	<title>Services | Opervanta</title>
 	<meta
 		name="description"
-		content="Software QA, software improvement, and workflow automation services from Opervanta."
+		content="Software QA, usability review, workflow improvement, and automation planning services from Opervanta."
 	/>
 </svelte:head>
 
@@ -18,11 +18,11 @@
 			<p class="mb-4 text-lg font-semibold text-cyan-600">Services</p>
 
 			<h1 class="max-w-3xl text-3xl font-semibold leading-tight tracking-tight text-slate-950 sm:text-4xl xl:text-[42px]">
-				Software quality, improvement, and automation services.
+				Software QA, workflow review, and practical improvement services.
 			</h1>
 
 			<p class="mt-6 max-w-3xl text-lg leading-8 text-slate-700">
-				Opervanta helps businesses test digital systems, identify software issues, improve
+				Opervanta helps businesses review digital systems, identify software issues, improve
 				usability, and reduce manual workflow friction.
 			</p>
 
@@ -38,17 +38,17 @@
 				<p class="mb-4 text-lg font-semibold text-cyan-600">Service areas</p>
 
 				<h2 class="max-w-3xl text-3xl font-semibold leading-tight tracking-tight text-slate-950 sm:text-4xl xl:text-[42px]">
-					Focused technology services for better software execution.
+					Focused services for better software execution.
 				</h2>
 
 				<p class="mt-5 text-lg leading-8 text-slate-700">
-					The work starts with understanding the system, testing important flows, documenting
-					issues clearly, and identifying practical improvement opportunities.
+					The work starts with understanding the system, reviewing important user flows,
+					documenting issues clearly, and identifying practical next steps.
 				</p>
 			</div>
 
 			<div class="mt-12 grid gap-6">
-				{#each serviceDetails as service}
+				{#each serviceDetails as service (service.title)}
 					<article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
 						<div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
 							<div>
@@ -62,7 +62,7 @@
 							</div>
 
 							<div class="grid gap-3 sm:grid-cols-2">
-								{#each service.points as point}
+								{#each service.points as point (point)}
 									<div class="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3">
 										<p class="text-sm font-medium text-slate-700">{point}</p>
 									</div>
@@ -86,13 +86,13 @@
 					</h2>
 
 					<p class="mt-5 text-lg leading-8 text-slate-700">
-						The goal is not only to find problems. The goal is to explain what is wrong, why it
-						matters, and what should happen next.
+						The goal is to explain what is wrong, why it matters, and what should happen
+						next. Findings should be useful for both business and technical decisions.
 					</p>
 				</div>
 
 				<div class="grid gap-3">
-					{#each deliverables as deliverable}
+					{#each deliverables as deliverable (deliverable)}
 						<div class="rounded-2xl border border-slate-200 bg-white px-5 py-4 shadow-sm">
 							<p class="text-base font-semibold text-slate-950">{deliverable}</p>
 						</div>
@@ -114,8 +114,9 @@
 						</h2>
 
 						<p class="mt-4 max-w-2xl text-base leading-7 text-slate-700">
-							Use Opervanta to identify software issues, unclear workflows, usability friction,
-							and improvement opportunities before they become larger business problems.
+							Share the software, workflow, or release concern you want reviewed. Opervanta
+							can help identify issues, clarify risk, and outline practical improvement
+							opportunities.
 						</p>
 					</div>
 
