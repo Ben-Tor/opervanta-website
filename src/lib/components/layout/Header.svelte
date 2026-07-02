@@ -14,10 +14,10 @@
 			<span class="text-sm font-semibold tracking-wide text-white">Opervanta</span>
 		</a>
 
-		<nav class="hidden items-center gap-8 text-sm font-medium text-slate-300 md:flex">
+		<nav class="hidden items-center gap-8 text-sm font-medium text-white md:flex">
 			{#each navigationLinks as link}
-				<a href={link.href} class="transition hover:text-white">
-					{link.label}
+				<a href={link.href} class="transition hover:text-cyan-300">
+				{link.label}
 				</a>
 			{/each}
 		</nav>

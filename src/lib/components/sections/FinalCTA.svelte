@@ -3,28 +3,24 @@
 	import Container from '$lib/components/ui/Container.svelte';
 </script>
 
-<section class="border-t border-white/10 py-24">
+<section class="border-t border-slate-200/80 py-20">
 	<Container>
-		<div class="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8 sm:p-10 lg:p-12">
-			<blockquote class="max-w-3xl text-2xl font-semibold tracking-tight text-white sm:text-3xl">
-				“Better software is not only built. It is tested, reviewed, improved, and trusted.”
-			</blockquote>
+		<div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm sm:p-10">
+			<p class="text-lg font-semibold text-cyan-600">Next step</p>
 
-			<div class="mt-10 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
+			<div class="mt-5 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
 				<div>
-					<p class="mb-4 text-sm font-medium text-cyan-300">Next step</p>
-
-					<h2 class="max-w-2xl text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+					<h2 class="max-w-3xl text-3xl font-semibold leading-tight tracking-tight text-slate-950 sm:text-4xl xl:text-[42px]">
 						Find the issues before your users do.
 					</h2>
 
-					<p class="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
+					<p class="mt-5 max-w-2xl text-lg leading-8 text-slate-700">
 						Request a software review to identify bugs, usability issues, broken flows, and
 						improvement opportunities in your digital system.
 					</p>
 				</div>
 
-				<div class="flex flex-col gap-4 sm:flex-row lg:flex-col">
+				<div class="flex flex-col gap-4 sm:min-w-64">
 					<Button href="/contact">Request a software review</Button>
 					<Button href="/services" variant="secondary">Explore services</Button>
 				</div>

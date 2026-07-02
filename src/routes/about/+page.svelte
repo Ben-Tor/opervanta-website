@@ -35,33 +35,33 @@
 </svelte:head>
 
 <main>
-	<section class="border-b border-white/10 py-20">
+	<section class="border-b border-slate-200/80 py-20">
 		<Container>
-			<p class="mb-4 text-sm font-medium text-cyan-300">About Opervanta</p>
+			<p class="mb-4 text-lg font-semibold text-cyan-600">About Opervanta</p>
 
-			<h1 class="max-w-4xl text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+			<h1 class="max-w-3xl text-3xl font-semibold leading-tight tracking-tight text-slate-950 sm:text-4xl xl:text-[42px]">
 				A technology company built around better software execution.
 			</h1>
 
-			<p class="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+			<p class="mt-6 max-w-3xl text-lg leading-8 text-slate-700">
 				Opervanta helps businesses review software, identify quality issues, improve digital
 				workflows, and make clearer technology decisions.
 			</p>
 		</Container>
 	</section>
 
-	<section class="border-b border-white/10 py-24">
+	<section class="border-b border-slate-200/80 py-20">
 		<Container>
 			<div class="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
 				<div>
-					<p class="mb-4 text-sm font-medium text-cyan-300">What Opervanta does</p>
+					<p class="mb-4 text-lg font-semibold text-cyan-600">What Opervanta does</p>
 
-					<h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+					<h2 class="max-w-3xl text-3xl font-semibold leading-tight tracking-tight text-slate-950 sm:text-4xl xl:text-[42px]">
 						Software review with a business operations mindset.
 					</h2>
 				</div>
 
-				<div class="space-y-5 text-base leading-8 text-slate-300">
+				<div class="space-y-5 text-base leading-8 text-slate-700">
 					<p>
 						Many software problems are not only technical problems. They show up as unclear
 						user steps, repeated manual work, broken processes, missed details, slow execution,
@@ -82,22 +82,22 @@
 		</Container>
 	</section>
 
-	<section class="border-b border-white/10 py-24">
+	<section class="border-b border-slate-200/80 py-20">
 		<Container>
 			<div class="max-w-3xl">
-				<p class="mb-4 text-sm font-medium text-cyan-300">Operating principles</p>
+				<p class="mb-4 text-lg font-semibold text-cyan-600">Operating principles</p>
 
-				<h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+				<h2 class="max-w-3xl text-3xl font-semibold leading-tight tracking-tight text-slate-950 sm:text-4xl xl:text-[42px]">
 					Built for clear findings and practical improvement.
 				</h2>
 			</div>
 
 			<div class="mt-12 grid gap-5 sm:grid-cols-2">
 				{#each principles as principle}
-					<article class="rounded-3xl border border-white/10 bg-white/[0.03] p-6">
-						<h3 class="text-lg font-semibold text-white">{principle.title}</h3>
+					<article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+						<h3 class="text-lg font-semibold text-slate-950">{principle.title}</h3>
 
-						<p class="mt-4 text-sm leading-7 text-slate-400">
+						<p class="mt-4 text-sm leading-7 text-slate-600">
 							{principle.description}
 						</p>
 					</article>
@@ -106,18 +106,18 @@
 		</Container>
 	</section>
 
-	<section class="py-24">
+	<section class="py-20">
 		<Container>
-			<div class="rounded-3xl border border-white/10 bg-white/[0.04] p-8 sm:p-10">
+			<div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm sm:p-10">
 				<div class="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
 					<div>
-						<p class="mb-4 text-sm font-medium text-cyan-300">Next step</p>
+						<p class="mb-4 text-lg font-semibold text-cyan-600">Next step</p>
 
-						<h2 class="text-3xl font-semibold tracking-tight text-white">
+						<h2 class="max-w-3xl text-3xl font-semibold leading-tight tracking-tight text-slate-950 sm:text-4xl xl:text-[42px]">
 							Review the service areas.
 						</h2>
 
-						<p class="mt-4 max-w-2xl text-base leading-7 text-slate-300">
+						<p class="mt-4 max-w-2xl text-base leading-7 text-slate-700">
 							See how Opervanta approaches software QA, software improvement, and workflow
 							automation.
 						</p>
