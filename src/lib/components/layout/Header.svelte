@@ -17,14 +17,14 @@
 		<nav class="hidden items-center gap-8 text-sm font-medium text-white md:flex">
 			{#each navigationLinks as link}
 				<a href={link.href} class="transition hover:text-cyan-300">
-				{link.label}
+					{link.label}
 				</a>
 			{/each}
 		</nav>
 
 		<a
 			href="/contact"
-			class="hidden rounded-full border border-white/15 px-4 py-2 text-sm font-semibold text-white transition hover:border-cyan-300/60 hover:bg-white/10 md:inline-flex"
+			class="hidden rounded-full border border-white bg-white px-4 py-2 text-sm font-semibold text-slate-950 transition hover:border-white hover:bg-cyan-400 hover:text-slate-950 md:inline-flex"
 		>
 			Request review
 		</a>
