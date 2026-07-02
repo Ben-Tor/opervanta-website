@@ -106,9 +106,9 @@
 					</h2>
 
 					<p class="mt-4 text-base leading-7 text-slate-700">
-						Include the system or workflow you want reviewed, the issue you are seeing, and the
-						business outcome you want to improve. A connected contact form will be added in a
-						later implementation step.
+								Include the system or workflow you want reviewed, the issue you are seeing, and the
+								business outcome you want to improve. A contact form and business email will be
+								connected before public launch.
 					</p>
 				</div>
 			</div>

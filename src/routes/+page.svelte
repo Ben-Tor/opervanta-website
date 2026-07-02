@@ -8,10 +8,10 @@
 </script>
 
 <svelte:head>
-	<title>Opervanta | Software Quality and Automation</title>
+	<title>Opervanta | Software QA and Workflow Improvement</title>
 	<meta
 		name="description"
-		content="Opervanta helps businesses test, improve, and automate digital systems."
+		content="Opervanta helps businesses review software, identify QA issues, improve usability, and reduce workflow friction."
 	/>
 </svelte:head>
 

@@ -15,14 +15,15 @@
 					</h2>
 
 					<p class="mt-5 max-w-2xl text-lg leading-8 text-slate-700">
-						Request a software review to identify bugs, usability issues, broken flows, and
-						improvement opportunities in your digital system.
+						Share the software, workflow, or release concern you want reviewed. Opervanta can
+						help identify bugs, usability friction, broken flows, and practical improvement
+						opportunities.
 					</p>
 				</div>
 
 				<div class="flex flex-col gap-4 sm:min-w-64">
 					<Button href="/contact">Request a software review</Button>
-					<Button href="/services" variant="secondary">Explore services</Button>
+					<Button href="/services" variant="secondary">View services</Button>
 				</div>
 			</div>
 		</div>
