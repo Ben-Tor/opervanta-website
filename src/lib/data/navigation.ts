@@ -1,9 +1,4 @@
-export type NavigationLink = {
-	label: string;
-	href: string;
-};
-
-export const navigationLinks: NavigationLink[] = [
+export const navigationLinks = [
 	{
 		label: 'Services',
 		href: '/services'
@@ -16,4 +11,6 @@ export const navigationLinks: NavigationLink[] = [
 		label: 'Contact',
 		href: '/contact'
 	}
-];
+] as const;
+
+export type NavigationLink = (typeof navigationLinks)[number];
