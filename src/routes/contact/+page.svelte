@@ -57,7 +57,7 @@
 				</div>
 
 				<div class="grid gap-3">
-					{#each requestItems as item}
+					{#each requestItems as item (item)}
 						<div class="rounded-2xl border border-slate-200 bg-white px-5 py-4 shadow-sm">
 							<p class="text-base font-semibold leading-6 text-slate-950">{item}</p>
 						</div>
@@ -85,7 +85,7 @@
 				</div>
 
 				<div class="grid gap-5 sm:grid-cols-2">
-					{#each fitItems as item}
+					{#each fitItems as item (item)}
 						<article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
 							<h3 class="text-base font-semibold text-slate-950">{item}</h3>
 						</article>
