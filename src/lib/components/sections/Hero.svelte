@@ -19,7 +19,7 @@
 	<Container class="grid items-center gap-12 lg:grid-cols-[1fr_0.92fr]">
 		<div>
 			<p
-				class="mb-5 inline-flex min-w-[36rem] max-w-full rounded-full border border-cyan-200 bg-white/80 px-5 py-2.5 text-[15px] font-semibold text-slate-800 shadow-sm"
+				class="mb-5 inline-flex min-w-xl max-w-full rounded-full border border-cyan-200 bg-white/80 px-5 py-2.5 text-[15px] font-semibold text-slate-800 shadow-sm"
 			>
 				Software QA / Software improvement / Workflow automation
 			</p>
@@ -53,9 +53,9 @@
 				</p>
 
 				<div class="mt-6 grid gap-3">
-					{#each capabilities as capability}
+					{#each capabilities as capability (capability)}
 						<div
-							class="flex items-center justify-between rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3"
+							class="flex items-center justify-between rounded-2xl border border-white/10 bg-white/3 px-4 py-3"
 						>
 							<span class="text-sm font-medium text-slate-200">{capability}</span>
 							<span class="h-2 w-2 rounded-full bg-cyan-300"></span>
