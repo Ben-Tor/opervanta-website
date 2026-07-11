@@ -4,6 +4,7 @@
 	import { navigationLinks } from '$lib/data/navigation';
 
 	let mobileMenuOpen = $state(false);
+	let menuButton: HTMLButtonElement | undefined;
 
 	const normalizePath = (path: string) => {
 		const normalized = path.replace(/\/$/, '');
@@ -20,9 +21,28 @@
 	};
 
 	const closeMobileMenu = () => {
-		mobileMenuOpen = false;
-	};
+	mobileMenuOpen = false;
+};
+
+const closeMobileMenuAndReturnFocus = () => {
+	mobileMenuOpen = false;
+	menuButton?.focus();
+};
+
+const handleWindowKeydown = (event: KeyboardEvent) => {
+	if (event.key === 'Escape' && mobileMenuOpen) {
+		closeMobileMenuAndReturnFocus();
+	}
+};
+
+const handleWindowResize = () => {
+	if (window.innerWidth >= 768 && mobileMenuOpen) {
+		closeMobileMenu();
+	}
+};
 </script>
+
+<svelte:window onkeydown={handleWindowKeydown} onresize={handleWindowResize} />
 
 <header class="sticky top-0 z-50 border-b border-slate-800 bg-black">
 	<div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
@@ -65,6 +85,7 @@
 
 		<button
 			type="button"
+			bind:this={menuButton}
 			class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-700 text-white transition hover:border-slate-500 hover:bg-slate-900 md:hidden"
 			aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
 			aria-expanded={mobileMenuOpen}
