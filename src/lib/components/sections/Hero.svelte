@@ -19,7 +19,7 @@
 	<Container class="grid items-center gap-12 lg:grid-cols-[1fr_0.92fr]">
 		<div>
 			<p
-				class="mb-5 inline-flex min-w-xl max-w-full rounded-full border border-cyan-200 bg-white/80 px-5 py-2.5 text-[15px] font-semibold text-slate-800 shadow-sm"
+				class="mb-5 flex w-full max-w-full rounded-2xl border border-cyan-200 bg-white/80 px-5 py-2.5 text-[15px] font-semibold leading-6 text-slate-800 shadow-sm sm:inline-flex sm:w-auto sm:min-w-xl sm:rounded-full"
 			>
 				Software QA / Software improvement / Workflow automation
 			</p>
